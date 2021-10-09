@@ -1,0 +1,38 @@
+
+    <div class="grafico mt-5">
+        <div id="area_chart"></div>
+    </div>
+    
+    
+    
+        <form #infoForm="ngForm">
+            <div class="card mt-4 text-center">
+                <label for="junho">Junho</label>
+                <input name="junho" id="junho" type="text" class="form-control" placeholder="Internações"
+                    [(ngModel)]='junho'>
+    
+            </div>
+            <div class="card mt-4 text-center">
+                <label for="julho">Julho</label>
+                <input name="julho" id="julho" type="text" class="form-control" placeholder="Internações"
+                    [(ngModel)]='julho'>
+    
+            </div>
+            <div class="card mt-4 text-center">
+                <label for="agosto">Agosto</label>
+                <input name="agosto" id="agosto" type="text" class="form-control" placeholder="Internações"
+                    [(ngModel)]='agosto'>
+    
+            </div>
+            <div class="card mt-4 text-center">
+                <label for="setembro">Setembro</label>
+                <input name="setembro" id="setembro" type="text" class="form-control" placeholder="Internações"
+                    [(ngModel)]='setembro'>
+    
+            </div>
+    
+            <input type="submit" value="Criar gráfico" class="btn btn-info btn-lg ml-4 mt-3" [disabled]="!infoForm.form.valid"
+                (click)='definirDados()'>
+    
+        </form>
+    

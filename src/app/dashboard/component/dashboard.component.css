@@ -1,0 +1,17 @@
+label{
+    font-weight: bold;
+}
+div{
+    width: 10em;
+    
+}
+container{
+    display: flex;
+    
+}
+form{
+    display: inline-flex;
+    justify-content: center;
+    
+    
+}
